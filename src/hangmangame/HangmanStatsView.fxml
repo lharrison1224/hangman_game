@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangmangame.HangmanStatsViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="760.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="820.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.7190476190476189" startX="1.0">
+               <stops>
+                  <Stop color="#d0d0d0" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="632.0" layoutX="25.0" layoutY="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="360.0" />
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="632.0" layoutX="436.0" layoutY="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="360.0" />
+      <MenuBar prefHeight="25.0" prefWidth="820.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleNewGame" text="New Game" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Navigate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToGamePage" text="View Game" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <HBox layoutY="107.0" prefHeight="643.0" prefWidth="820.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="707.0" prefWidth="410.0">
+               <children>
+                  <Label text="This Game">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE" height="10.0" radius="4.5" spread="0.66" width="10.0" />
+                     </effect>
+                  </Label>
+                  <HBox prefHeight="673.0" prefWidth="410.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="670.0" prefWidth="205.0">
+                           <children>
+                              <Label text="Guess">
+                                 <font>
+                                    <Font name="System Bold Italic" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="gameGuess" alignment="TOP_CENTER" prefHeight="634.0" prefWidth="47.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="670.0" prefWidth="205.0">
+                           <children>
+                              <Label text="Result">
+                                 <font>
+                                    <Font name="System Bold Italic" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="gameResult" alignment="TOP_CENTER" prefHeight="637.0" prefWidth="47.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="707.0" prefWidth="410.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="707.0" prefWidth="410.0">
+                     <children>
+                        <Label text="Game History">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="WHITE" height="10.0" radius="4.5" spread="0.66" width="10.0" />
+                           </effect>
+                        </Label>
+                        <HBox prefHeight="673.0" prefWidth="410.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="670.0" prefWidth="205.0">
+                                 <children>
+                                    <Label text="Word">
+                                       <font>
+                                          <Font name="System Bold Italic" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sessionWord" alignment="TOP_CENTER" prefHeight="634.0" prefWidth="180.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="670.0" prefWidth="205.0">
+                                 <children>
+                                    <Label text="Result">
+                                       <font>
+                                          <Font name="System Bold Italic" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sessionResult" alignment="TOP_CENTER" prefHeight="636.0" prefWidth="115.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutY="25.0" prefHeight="53.0" prefWidth="820.0" text="STATISTICS" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="20.0" radius="9.5" spread="0.5" width="20.0" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

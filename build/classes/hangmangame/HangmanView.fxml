@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangmangame.FXMLDocumentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="747.0" layoutX="-2.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="822.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5190476190476191">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#c3c3c3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <StackPane layoutX="193.0" layoutY="14.0" prefHeight="415.0" prefWidth="435.0">
+         <children>
+            <Pane prefHeight="427.0" prefWidth="435.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="327.0" layoutX="312.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b27744" height="50.0" layoutX="149.0" layoutY="37.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="433.0" layoutX="212.0" layoutY="141.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="176.0" layoutX="229.0" layoutY="-57.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="20.0" layoutX="146.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="98.0" layoutX="279.0" layoutY="15.0" rotate="315.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b27744" height="20.0" layoutX="146.0" layoutY="66.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                  <Ellipse fill="#b27744" layoutX="151.0" layoutY="109.0" radiusX="19.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Ellipse fill="WHITE" layoutX="151.0" layoutY="109.0" radiusX="15.0" radiusY="21.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Pane layoutX="65.0" layoutY="76.0" prefHeight="264.0" prefWidth="176.0">
+                     <children>
+                        <Circle fx:id="head" fill="WHITE" layoutX="86.0" layoutY="24.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Rectangle fx:id="body" arcHeight="5.0" arcWidth="5.0" height="100.0" layoutX="84.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+                        <Rectangle fx:id="leftLeg" arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="67.0" layoutY="149.0" rotate="30.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+                        <Rectangle fx:id="rightLeg" arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="101.0" layoutY="149.0" rotate="330.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+                        <Rectangle fx:id="rightArm" arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="108.0" layoutY="37.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+                        <Rectangle fx:id="leftArm" arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="59.0" layoutY="37.0" rotate="315.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#e4e4e4" height="190.0" layoutX="66.0" layoutY="549.0" stroke="BLACK" strokeWidth="3.0" width="688.0" />
+      <Button fx:id="pButton" layoutX="691.0" layoutY="562.0" mnemonicParsing="false" onAction="#pButtonOnAction" prefWidth="50.0" text="P" AnchorPane.leftAnchor="691.0" AnchorPane.rightAnchor="79.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="oButton" layoutX="623.0" layoutY="562.0" mnemonicParsing="false" onAction="#oButtonOnAction" prefWidth="50.0" text="O" AnchorPane.leftAnchor="623.0" AnchorPane.rightAnchor="147.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="iButton" layoutX="555.0" layoutY="562.0" mnemonicParsing="false" onAction="#iButtonOnAction" prefWidth="50.0" text="I" AnchorPane.leftAnchor="555.0" AnchorPane.rightAnchor="215.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="uButton" layoutX="487.0" layoutY="562.0" mnemonicParsing="false" onAction="#uButtonOnAction" prefWidth="50.0" text="U" AnchorPane.leftAnchor="487.0" AnchorPane.rightAnchor="283.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="yButton" layoutX="419.0" layoutY="562.0" mnemonicParsing="false" onAction="#yButtonOnAction" prefWidth="50.0" text="Y" AnchorPane.leftAnchor="419.0" AnchorPane.rightAnchor="351.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="tButton" layoutX="351.0" layoutY="562.0" mnemonicParsing="false" onAction="#tButtonOnAction" prefWidth="50.0" text="T" AnchorPane.leftAnchor="351.0" AnchorPane.rightAnchor="419.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="rButton" layoutX="283.0" layoutY="562.0" mnemonicParsing="false" onAction="#rButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="R" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="487.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="eButton" layoutX="215.0" layoutY="562.0" mnemonicParsing="false" onAction="#eButtonOnAction" prefHeight="30.0" prefWidth="50.0" text="E" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="555.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="wButton" layoutX="147.0" layoutY="562.0" mnemonicParsing="false" onAction="#wButtonOnAction" prefWidth="50.0" text="W" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="623.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="qButton" layoutX="79.0" layoutY="562.0" minWidth="50.0" mnemonicParsing="false" onAction="#qButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="Q" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="691.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="aButton" layoutX="113.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#aButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="A" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="657.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="sButton" layoutX="181.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#sButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="S" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="589.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="dButton" layoutX="249.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#dButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="D" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="521.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="fButton" layoutX="317.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#fButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="F" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="453.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="gButton" layoutX="385.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#gButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="G" AnchorPane.leftAnchor="385.0" AnchorPane.rightAnchor="385.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="hButton" layoutX="453.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#hButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="H" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="317.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="lButton" layoutX="657.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#lButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="L" AnchorPane.leftAnchor="657.0" AnchorPane.rightAnchor="113.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="jButton" layoutX="521.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#jButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="J" AnchorPane.leftAnchor="521.0" AnchorPane.rightAnchor="249.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="kButton" layoutX="589.0" layoutY="621.0" minWidth="50.0" mnemonicParsing="false" onAction="#kButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="K" AnchorPane.leftAnchor="589.0" AnchorPane.rightAnchor="179.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="zButton" layoutX="181.0" layoutY="680.0" minWidth="50.0" mnemonicParsing="false" onAction="#zButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="Z" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="589.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="249.0" layoutY="680.0" minWidth="50.0" mnemonicParsing="false" onAction="#xButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="X" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="521.0" fx:id="xButton">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="cButton" layoutX="317.0" layoutY="680.0" minWidth="50.0" mnemonicParsing="false" onAction="#cButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="C">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="vButton" layoutX="385.0" layoutY="680.0" minWidth="50.0" mnemonicParsing="false" onAction="#vButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="V">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="bButton" layoutX="453.0" layoutY="680.0" minWidth="50.0" mnemonicParsing="false" onAction="#bButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="B">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="nButton" layoutX="521.0" layoutY="680.0" minWidth="50.0" mnemonicParsing="false" onAction="#nButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="N">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="mButton" layoutX="589.0" layoutY="680.0" minWidth="50.0" mnemonicParsing="false" onAction="#mButtonOnAction" prefHeight="44.0" prefWidth="50.0" text="M">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="wordLabel" alignment="CENTER" layoutY="408.0" prefHeight="128.0" prefWidth="820.0" text="T _ S T" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="72.0" />
+         </font>
+      </Label>
+      <MenuBar prefHeight="25.0" prefWidth="820.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleNewGame" text="New Game" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Navigate">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#goToStatsPage" text="View Stats" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

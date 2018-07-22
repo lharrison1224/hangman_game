@@ -1,0 +1,31 @@
+Requirements:
+
+1. Classes
+	- I have 6 classes in my project: FXMLDocumentController, HangmanGame, HangmanModel, HangmanStatsViewController, controller, and LoginViewController
+
+2. Subclasses
+	- I have two subclasses: FXMLDocumentController and  HangmanStatsViewController, which are subclasses of Controller
+
+3. Abstract Class
+	- My Controller class is abstract
+
+4. Interface
+	- My interface for the project is HangmanInterface
+
+5. Collection
+	- I use this in my methods that interact with the database to check if the file im converting to bytes to send to the database is empty
+
+6. Exception Handling
+	- This is done all throughout the program. One good spot to see it is in HandleCreateAccount() in the LoginViewController.java file
+
+7. Model
+	- I have a clear model which is in the file HangmanModel.java
+
+8. Multiple Scenes
+	- I have three different scenes: the login screen, the game screen, and the stats screen
+
+9. About
+	- This can be accessed under Help -> About
+
+10. Save/Load data
+	- When a user logs in, their session is automatically loaded into the app from a file in the database that stores all of their game info. Upon logging out, the file is automatically replaced in the database by an updated version from their most recent session. This can be seen by creating an account, logging in, playing some, closing the app, relaunching it, and it will open up to right where you left off when you last closed it. 
